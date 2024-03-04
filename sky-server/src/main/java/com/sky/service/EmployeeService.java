@@ -36,4 +36,17 @@ public interface EmployeeService {
      * @param id
      */
     void enableordisable(Integer status, Long id);
+
+    /**
+     * 按id查询
+     * @param id
+     * @return
+     */
+    Employee selectById(Long id);
+
+    /**
+     * 编辑员工信息
+     * @param employeeDTO
+     */
+    void editEmployee(EmployeeDTO employeeDTO);
 }

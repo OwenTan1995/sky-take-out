@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.LongSummaryStatistics;
 import java.util.Map;
 
 /**
@@ -110,6 +111,28 @@ public class EmployeeController {
     @ApiOperation("启用禁用员工账号")
     public Result enableordisable(@PathVariable Integer status,Long id){
         employeeService.enableordisable(status,id);
+        return Result.success();
+    }
+
+    /**
+     * 按id查询
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    @ApiOperation("按id查询")
+    public Result<Employee> selectById(@PathVariable Long id){
+        Employee employee = employeeService.selectById(id);
+        return Result.success(employee);
+    }
+
+    /**
+     * 编辑员工信息
+     */
+    @PutMapping
+    @ApiOperation("编辑员工信息")
+    public Result editEmployee(@RequestBody EmployeeDTO employeeDTO){
+        employeeService.editEmployee(employeeDTO);
         return Result.success();
     }
 
