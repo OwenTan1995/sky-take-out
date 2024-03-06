@@ -8,6 +8,6 @@ sky:
     password: root
   alioss:
     endpoint: oss-cn-nanjing.aliyuncs.com
-    access-key-id: LTAI5t9cEMHRHBMCkAM1GtJh
-    access-key-secret: qTuxPKSTP2mFhdgkxOtb0uehwVB27J
+    access-key-id: **************************
+    access-key-secret: ****************************
     bucket-name: take-out-tsh
