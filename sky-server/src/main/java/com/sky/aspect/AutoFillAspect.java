@@ -53,7 +53,7 @@ public class AutoFillAspect {
                 setcreateTime.invoke(arg,now);
                 setupdateTime.invoke(arg,now);
                 setcreateUser.invoke(arg,currentId);
-                setupdateTime.invoke(arg,now);
+                setupdateUser.invoke(arg,currentId);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -63,7 +63,7 @@ public class AutoFillAspect {
                 Method setupdateTime = arg.getClass().getDeclaredMethod(AutoFillConstant.SET_UPDATE_TIME, LocalDateTime.class);
                 Method setupdateUser = arg.getClass().getDeclaredMethod(AutoFillConstant.SET_UPDATE_USER, Long.class);
                 setupdateTime.invoke(arg,now);
-                setupdateTime.invoke(arg,now);
+                setupdateUser.invoke(arg,currentId);
             } catch (Exception e) {
                 e.printStackTrace();
             }
