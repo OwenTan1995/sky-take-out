@@ -6,7 +6,10 @@ import com.sky.entity.Dish;
 import com.sky.result.PageResult;
 
 public interface DishService {
-
+    /**
+     * 添加菜品
+     * @param dishDTO
+     */
     void addDish(DishDTO dishDTO);
 
     /**
