@@ -40,4 +40,11 @@ public interface DishService {
      * @param dishDTO
      */
     void updateDish(DishDTO dishDTO);
+
+    /**
+     * 查询分类下的全部菜品
+     * @param categoryId
+     * @return
+     */
+    List<Dish> selectByCategoryId(Long categoryId);
 }
