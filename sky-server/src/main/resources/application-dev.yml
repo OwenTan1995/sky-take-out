@@ -11,3 +11,8 @@ sky:
     access-key-id: LTAI5t9cEMHRHBMCkAM1GtJh
     access-key-secret: qTuxPKSTP2mFhdgkxOtb0uehwVB27J
     bucket-name: take-out-tsh
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
